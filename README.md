@@ -4,7 +4,7 @@
 
 - `isFetching`: the async query function han't yet resolved
 - `isLoading`: no cached data, plus isFetching
-  -> `isLoading` is a subset of `isFetching`
+- -> `isLoading` is a subset of `isFetching`
 
 ## Data `refetch` only triggers for stale data
 

@@ -9,6 +9,10 @@ const routes: RouteRecordRaw[] = [
     path: '/blog',
     component: () => import('./pages/Blog/index.vue'),
   },
+  {
+    path: '/sw',
+    component: () => import('./pages/Starwars.vue'),
+  },
 ]
 
 export default createRouter({

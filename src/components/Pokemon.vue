@@ -17,7 +17,7 @@
 <script lang="ts">
 import { defineComponent, ref, watch, reactive, computed } from 'vue'
 import { useQuery } from 'vue-query'
-import api, { search } from '@/api'
+import api, { search } from '@/api/pokeApi'
 import useDebounceRef from '@/composables/useDebounceRef'
 import axios from 'axios'
 

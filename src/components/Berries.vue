@@ -2,17 +2,11 @@
   <div>
     Berries
     <div v-if="isLoading">Loading...</div>
-    <div v-if="isFetching">
-      Updating...
-    </div>
-    <div v-if="isError">Error {{error}}</div>
+    <div v-if="isFetching">Updating...</div>
+    <div v-if="isError">Error {{ error }}</div>
 
-    <div
-      v-if="data"
-      v-for="berry in data.results"
-      :key="berry.name"
-    >
-      {{berry}}
+    <div v-if="data" v-for="berry in data.results" :key="berry.name">
+      {{ berry }}
     </div>
   </div>
 </template>
@@ -20,7 +14,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import { useQuery } from 'vue-query'
-import api from '@/api'
+import api from '@/api/pokeApi'
 
 export default defineComponent({
   name: 'Berries',
@@ -48,5 +42,4 @@ export default defineComponent({
 })
 </script>
 
-<style>
-</style>
+<style></style>
